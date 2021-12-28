@@ -5,8 +5,7 @@ const socketIO = require('socket.io');
 
 const PORT = process.env.PORT || 3000;
 const INDEX = '/index.html';
-const countdown = 181000;
-
+var countdown = 181000;
 
 const server = express()
   .use((req, res) => res.sendFile(INDEX, { root: __dirname }))
