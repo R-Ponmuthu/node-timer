@@ -20,7 +20,7 @@ io.on('connection', (socket) => {
 
 setInterval(function() {
   countdown=countdown-1000;
-  io.emit('timer',  PORT );
+  io.emit('timer',  countdown );
   if(countdown == 0){
     countdown = 181000
   }
